@@ -1,0 +1,287 @@
+{
+  "High Gross Margin": [
+    {
+      "framework": "Differentiation and the Price Premium",
+      "source": "Porter, Michael E. Competitive Advantage: Creating and Sustaining Superior Performance. Free Press, 1985. Chapter 4: Differentiation.",
+      "insight": "A high gross margin is the financial signature of successful differentiation — when buyers perceive unique value, they pay a price premium that flows directly into gross profit before overhead is touched."
+    },
+    {
+      "framework": "ROIC Decomposition and Margin Structure",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "In McKinsey's ROIC framework, gross margin is the primary revenue-side value driver; companies with structurally high gross margins generate ROIC above the cost of capital more reliably than those competing on volume."
+    },
+    {
+      "framework": "Competitive Moat and Margin Persistence",
+      "source": "Palepu, Krishna G., and Healy, Paul M. Business Analysis and Valuation: Using Financial Statements. 6th ed. Cengage Learning, 2019.",
+      "insight": "Persistently high gross margins — especially above industry averages — are evidence of a durable competitive advantage rather than a transient pricing opportunity, and should be tested for sustainability over time."
+    }
+  ],
+
+  "Moderate Gross Margin": [
+    {
+      "framework": "Generic Competitive Strategies and Margin Positioning",
+      "source": "Porter, Michael E. Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press, 1980. Chapter 2: Generic Competitive Strategies.",
+      "insight": "A moderate gross margin is consistent with a cost-leader or undifferentiated competitor in a contested industry; sustainability depends on whether the firm has scale discipline or is drifting toward the 'stuck in the middle' trap."
+    },
+    {
+      "framework": "Financial Ratio Benchmarking",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Gross margin in the moderate range requires peer comparison and multi-year trend analysis — the ratio alone cannot distinguish a well-run industrial firm from an underperforming technology company."
+    }
+  ],
+
+  "Thin Gross Margin": [
+    {
+      "framework": "Cost Advantage as Necessary Condition",
+      "source": "Porter, Michael E. Competitive Advantage: Creating and Sustaining Superior Performance. Free Press, 1985. Chapter 3: Cost Advantage.",
+      "insight": "Thin gross margins are structurally viable only for disciplined cost leaders; a firm without genuine cost advantage faces existential exposure to input price increases or the entry of lower-cost competitors."
+    },
+    {
+      "framework": "Stuck in the Middle",
+      "source": "Porter, Michael E. Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press, 1980. Chapter 2: Generic Competitive Strategies.",
+      "insight": "Porter warns that firms 'stuck in the middle' — lacking either differentiation or true cost leadership — reliably produce thin margins without the scale or pricing power to sustain them."
+    },
+    {
+      "framework": "Cost-Volume-Profit Analysis",
+      "source": "Horngren, Charles T., Datar, Srikant M., and Rajan, Madhav V. Cost Accounting: A Managerial Emphasis. 17th ed. Pearson, 2021. Chapter 3: Cost-Volume-Profit Analysis.",
+      "insight": "A thin contribution margin means fixed costs must be recovered over very high volumes; any volume shortfall rapidly converts the income statement from breakeven to operating loss."
+    }
+  ],
+
+  "Strong Operating Margin": [
+    {
+      "framework": "Operational Effectiveness and Strategy",
+      "source": "Porter, Michael E. 'What Is Strategy?' Harvard Business Review, November–December 1996.",
+      "insight": "Strong operating margins can reflect superior operational effectiveness, but Porter cautions that productivity advantages are typically imitable — sustained high margins require a unique strategic position, not just efficiency."
+    },
+    {
+      "framework": "NOPLAT Margin and ROIC",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "NOPLAT margin — the after-tax analog of operating margin used in McKinsey's ROIC decomposition — is the single most powerful lever for value creation; companies sustaining it above peer levels earn ROIC well above cost of capital."
+    },
+    {
+      "framework": "Profitability Ratio Analysis",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Operating margin above industry median is a primary indicator analysts use to assess management quality and the durability of the business model under competitive pressure."
+    },
+    {
+      "framework": "Creating Shared Value",
+      "source": "Porter, Michael E., and Kramer, Mark R. 'Creating Shared Value.' Harvard Business Review, January–February 2011.",
+      "insight": "Strong operating margins generate the economic surplus that makes it possible to invest in employee development, supplier capability, and community — Porter and Kramer argue this reinvestment is itself a source of competitive advantage, not a cost."
+    }
+  ],
+
+  "Adequate Operating Margin": [
+    {
+      "framework": "Margin Improvement as Value Driver",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "Adequate but unexceptional operating margins raise the central analytical question: is the margin constrained by deliberate growth investment, or does it represent the structural ceiling of the current business model?"
+    },
+    {
+      "framework": "Financial Performance Benchmarking",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Operating margin is most informative as a trend — adequate margins today may represent meaningful improvement from a low base or slow erosion from a stronger position, and only the direction reveals which."
+    }
+  ],
+
+  "Operating Loss": [
+    {
+      "framework": "Financial Distress and Its Costs",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Sustained operating losses signal that a firm's asset base is not generating sufficient returns to cover operating costs — raising the probability of financial distress, which imposes real costs through customer defection, supplier tightening, and management distraction."
+    },
+    {
+      "framework": "Valuing Firms with Negative Earnings",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran identifies three distinct causes of operating losses — cyclical downturns, temporary shocks, and structural problems — each requiring a fundamentally different analytical approach before a valuation or recovery judgment can be made."
+    },
+    {
+      "framework": "Accounting Analysis and Earnings Quality",
+      "source": "Palepu, Krishna G., and Healy, Paul M. Business Analysis and Valuation: Using Financial Statements. 6th ed. Cengage Learning, 2019.",
+      "insight": "Sustained operating losses require analysts to distinguish investment-driven losses (a deliberate strategy to acquire customers or build capabilities) from structural losses caused by a fundamentally uncompetitive cost base."
+    },
+    {
+      "framework": "Stakeholder Impact of Financial Failure",
+      "source": "Freeman, R. Edward. Strategic Management: A Stakeholder Approach. Cambridge University Press, 2010. (Originally published Pitman, 1984.)",
+      "insight": "Freeman's stakeholder framework makes clear that operating losses are not solely an investor problem — employees face job insecurity, suppliers face delayed payment, and customers face service deterioration, each of which accelerates the firm's decline if not addressed."
+    }
+  ],
+
+  "High Revenue Growth": [
+    {
+      "framework": "Sustainable Growth Rate Framework",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Higgins's sustainable growth rate model shows that revenue growth above the sustainable rate strains internal financing and requires either external capital or explicit trade-offs in margin, asset efficiency, or leverage."
+    },
+    {
+      "framework": "Growth, ROIC, and Value Creation",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "High revenue growth creates shareholder value only when returns on invested capital exceed the cost of capital — growth at below-WACC returns destroys value regardless of the headline growth rate."
+    },
+    {
+      "framework": "Sales Growth as a Value Driver",
+      "source": "Rappaport, Alfred. Creating Shareholder Value: A Guide for Managers and Investors. Rev. ed. Free Press, 1998.",
+      "insight": "Rappaport identifies sales growth rate as one of seven primary shareholder value drivers, but argues its contribution is inseparable from the margin and capital efficiency assumptions that accompany it."
+    },
+    {
+      "framework": "Stakeholder Theory and Multi-Party Value Creation",
+      "source": "Freeman, R. Edward. Strategic Management: A Stakeholder Approach. Cambridge University Press, 2010. (Originally published Pitman, 1984.)",
+      "insight": "Freeman's stakeholder framework reframes revenue growth as value creation across the full network of parties — employees gain job security, suppliers gain contracts, and communities gain tax revenues — making growth a multi-stakeholder signal, not just a financial one."
+    }
+  ],
+
+  "Moderate Revenue Growth": [
+    {
+      "framework": "Sustainable Growth and Financing Balance",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Moderate revenue growth near a firm's sustainable growth rate signals balance between expansion ambition and internal financing capacity — the company grows without straining its balance sheet."
+    },
+    {
+      "framework": "Growth, ROIC, and Compounding Value",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "Consistent moderate growth compounded over a multi-year horizon creates significant enterprise value when paired with returns on invested capital above the cost of capital."
+    }
+  ],
+
+  "Slow Revenue Growth": [
+    {
+      "framework": "Industry Maturity and Competitive Rivalry",
+      "source": "Porter, Michael E. Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press, 1980. Chapter 2: Generic Competitive Strategies.",
+      "insight": "Slow growth often signals industry maturity or saturation; Porter shows that in maturing industries, rivalry intensifies and competitive advantage must come from operational efficiency or focused differentiation rather than market expansion."
+    },
+    {
+      "framework": "Valuing Mature and Slow-Growth Companies",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "In Damodaran's framework, slow-growth firms derive most of their value from existing assets rather than future growth opportunities — making current profitability and capital efficiency the dominant valuation drivers."
+    }
+  ],
+
+  "Revenue Decline": [
+    {
+      "framework": "Valuing Declining Firms",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran's framework for declining firms requires analysts to determine whether the contraction is mean-reverting (cyclical) or permanent (secular), as terminal value assumptions differ dramatically between these two scenarios."
+    },
+    {
+      "framework": "Industry Decline and Competitive Exit",
+      "source": "Porter, Michael E. Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press, 1980. Chapter 2: Generic Competitive Strategies.",
+      "insight": "Porter identifies industry decline as a distinct competitive phase in which overcapacity, exit barriers, and intensified rivalry combine to compress margins — firms without a defensible niche face particularly severe outcomes."
+    },
+    {
+      "framework": "Revenue Decline as a Fundamental Value Threat",
+      "source": "Rappaport, Alfred. Creating Shareholder Value: A Guide for Managers and Investors. Rev. ed. Free Press, 1998.",
+      "insight": "Declining revenue is the most dangerous of Rappaport's seven value drivers because it simultaneously compresses margins, strands fixed costs, and raises the cost of capital by increasing the perceived riskiness of future cash flows."
+    },
+    {
+      "framework": "Stakeholder Value Erosion in Decline",
+      "source": "Freeman, R. Edward. Strategic Management: A Stakeholder Approach. Cambridge University Press, 2010. (Originally published Pitman, 1984.)",
+      "insight": "Freeman's stakeholder model shows that sustained revenue decline is not a private investor problem — it erodes value for every party in the firm's ecosystem, and the resulting stakeholder defection (employees leaving, suppliers cutting credit, customers switching) can make recovery progressively harder to achieve."
+    }
+  ],
+
+  "Conservative Debt Level": [
+    {
+      "framework": "Trade-Off Theory of Capital Structure",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Trade-off theory holds that conservative leverage sacrifices the tax shield of debt but preserves financial flexibility and reduces the probability of distress — particularly valuable for firms in cyclical industries or early growth phases."
+    },
+    {
+      "framework": "Debt Capacity and Strategic Optionality",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "A conservatively leveraged balance sheet represents unused debt capacity — a form of strategic optionality that allows the firm to fund acquisitions, weather downturns, or invest counter-cyclically without diluting equity holders."
+    }
+  ],
+
+  "Elevated Leverage": [
+    {
+      "framework": "Trade-Off Theory and Distress Costs",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Trade-off theory predicts that as leverage rises, expected distress costs eventually offset the tax benefits of debt — elevated leverage suggests the firm is approaching the threshold where this trade-off becomes unfavorable."
+    },
+    {
+      "framework": "Leverage, Risk, and Valuation",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Elevated leverage amplifies both upside and downside: it magnifies returns on equity in good times but accelerates distress in downturns, making stable and predictable cash flow a prerequisite for comfortably carrying it."
+    }
+  ],
+
+  "High Debt Load": [
+    {
+      "framework": "Financial Distress and Debt Overhang",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "High leverage creates a debt overhang that constrains investment, accelerates customer and supplier defection, and triggers a downward spiral in which financial distress itself destroys the operating value of the business."
+    },
+    {
+      "framework": "Bankruptcy Prediction and Leverage",
+      "source": "Altman, Edward I. 'Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy.' Journal of Finance 23, no. 4 (September 1968): 589–609.",
+      "insight": "Altman's Z-score — the foundational quantitative bankruptcy prediction model — identifies leverage relative to asset value as one of the five dominant predictors of financial failure."
+    },
+    {
+      "framework": "Debt as a Constraint on Value-Creating Investment",
+      "source": "Rappaport, Alfred. Creating Shareholder Value: A Guide for Managers and Investors. Rev. ed. Free Press, 1998.",
+      "insight": "Excessive debt directly constrains the discretionary cash flow available for reinvestment — Rappaport frames this as leverage crowding out the growth and capital spending that drive long-term shareholder value."
+    },
+    {
+      "framework": "Debt Overhang and Stakeholder Relationships",
+      "source": "Freeman, R. Edward. Strategic Management: A Stakeholder Approach. Cambridge University Press, 2010. (Originally published Pitman, 1984.)",
+      "insight": "Heavy debt burdens constrain a firm's capacity to invest in employee development, supplier partnerships, and customer experience — Freeman's framework treats this erosion of stakeholder investment as a leading indicator of competitive deterioration, not just a balance sheet concern."
+    }
+  ],
+
+  "Strong Cash Position": [
+    {
+      "framework": "Liquidity Management and Financial Resilience",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "A strong cash position buffers the firm against short-term shocks to revenue or working capital, reducing the probability that liquidity constraints force value-destroying decisions at the worst possible moment."
+    },
+    {
+      "framework": "Cash Holdings and Strategic Optionality",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Substantial cash reserves create strategic optionality — the ability to act counter-cyclically through acquisitions, buybacks, or accelerated investment — which Damodaran treats as a source of real option value beyond the face value of the cash."
+    }
+  ],
+
+  "Low Cash Cushion": [
+    {
+      "framework": "Liquidity Risk and Financial Distress",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Inadequate liquidity forces firms into costly short-term financing precisely when it is hardest to obtain — low cash is not just a balance sheet weakness but an amplifier of both operational and market risk."
+    },
+    {
+      "framework": "Liquidity Ratios in Bankruptcy Prediction",
+      "source": "Altman, Edward I. 'Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy.' Journal of Finance 23, no. 4 (September 1968): 589–609.",
+      "insight": "Working capital to total assets — a close analog to the cash adequacy signal — is one of Altman's five Z-score variables and one of the strongest early quantitative indicators of approaching financial distress."
+    }
+  ],
+
+  "Operational Leverage": [
+    {
+      "framework": "Fixed Cost Structure and Operating Leverage",
+      "source": "Horngren, Charles T., Datar, Srikant M., and Rajan, Madhav V. Cost Accounting: A Managerial Emphasis. 17th ed. Pearson, 2021. Chapter 3: Cost-Volume-Profit Analysis.",
+      "insight": "Operating leverage — the proportion of fixed to variable costs — determines how much incremental revenue flows to operating profit; a high fixed-cost structure amplifies profit growth as volume expands, producing exactly the pattern this signal detects."
+    },
+    {
+      "framework": "Scalable Business Models and ROIC Improvement",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "Companies that grow operating profit faster than revenue are demonstrating cost scalability — a structural property McKinsey links to improving ROIC trajectories and compounding enterprise value creation over time."
+    }
+  ],
+
+  "Margin Compression": [
+    {
+      "framework": "Erosion of Cost Advantage",
+      "source": "Porter, Michael E. Competitive Advantage: Creating and Sustaining Superior Performance. Free Press, 1985. Chapter 3: Cost Advantage.",
+      "insight": "Margin compression despite revenue growth signals that cost discipline is eroding — a pattern Porter associates with the loss of cost advantage as scale and process investments fail to keep pace with expansion."
+    },
+    {
+      "framework": "ROIC Decline and Value Destruction Through Growth",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "When operating margin declines as revenue grows, ROIC falls even as the business is expanding — McKinsey's framework shows this is one of the most common paths by which growth destroys rather than creates shareholder value."
+    },
+    {
+      "framework": "Cost Growth vs. Revenue Growth Divergence",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Higgins's framework treats cost control as inseparable from revenue growth management — a firm whose cost base grows faster than its revenue is consuming the financial headroom that sustainable growth requires."
+    }
+  ]
+}
