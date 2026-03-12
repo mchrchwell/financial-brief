@@ -2,3 +2,4 @@ anthropic
 flask
 pandas
 python-dotenv
+yfinance

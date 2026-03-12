@@ -3,12 +3,14 @@
 main.py — Entry point: wires all five stages together.
 
 Usage:
+    python3 main.py AAPL
     python3 main.py <csv_path> "Company Name"
 
 Required CSV columns: year, revenue, cogs, opex, cash, debt
 """
 
 import os
+import re
 import sys
 
 try:
@@ -19,6 +21,7 @@ except ImportError:
 
 import pandas as pd
 
+from financial_brief.ingest   import fetch_company_data, get_company_name
 from financial_brief.metrics  import compute_all_metrics
 from financial_brief.signals  import detect_signals
 from financial_brief.matcher  import load_library, match_citations
@@ -30,22 +33,39 @@ LIBRARY_PATH = os.path.join(os.path.dirname(__file__), "financial_brief", "libra
 
 
 def main() -> None:
-    if len(sys.argv) != 3:
-        print("Usage: python3 main.py <csv_path> \"Company Name\"")
+    if len(sys.argv) not in (2, 3):
+        print("Usage: python3 main.py TICKER")
+        print("       python3 main.py <csv_path> \"Company Name\"")
         sys.exit(1)
 
-    csv_path, company_name = sys.argv[1], sys.argv[2]
+    first_arg = sys.argv[1]
+    is_ticker = re.fullmatch(r"[A-Z]{1,5}", first_arg) is not None
 
-    if not os.path.exists(csv_path):
-        print(f"Error: CSV file not found: {csv_path}")
-        sys.exit(1)
+    if is_ticker:
+        ticker = first_arg
+        try:
+            df           = fetch_company_data(ticker)
+            company_name = get_company_name(ticker)
+        except ValueError as exc:
+            print(f"Error: {exc}")
+            sys.exit(1)
+    else:
+        if len(sys.argv) != 3:
+            print("Usage: python3 main.py <csv_path> \"Company Name\"")
+            sys.exit(1)
 
-    df = pd.read_csv(csv_path)
+        csv_path, company_name = first_arg, sys.argv[2]
 
-    missing = REQUIRED_COLUMNS - set(df.columns)
-    if missing:
-        print(f"Error: CSV is missing required columns: {', '.join(sorted(missing))}")
-        sys.exit(1)
+        if not os.path.exists(csv_path):
+            print(f"Error: CSV file not found: {csv_path}")
+            sys.exit(1)
+
+        df = pd.read_csv(csv_path)
+
+        missing = REQUIRED_COLUMNS - set(df.columns)
+        if missing:
+            print(f"Error: CSV is missing required columns: {', '.join(sorted(missing))}")
+            sys.exit(1)
 
     year = int(df["year"].max())
 

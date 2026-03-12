@@ -67,6 +67,7 @@ Rules you must follow without exception:
 3. SCOPE — This is an internal analysis only. Do not benchmark against industry averages, sector peers, or external indices. All comparisons must be internal (e.g., year-over-year using provided data).
 4. AUDIENCE — Write for a senior executive audience. Be direct and specific. No jargon, no hedging language, no filler phrases like "it is worth noting" or "it is important to consider".
 5. ATTRIBUTION — Every finding in strengths, risks, and observations must reference the specific framework and source it comes from, as provided in the input.
+6. FORMATTING — Format all ratio metrics as percentages (e.g. 0.32 → 32.0%). Format all large integers with comma separators (e.g. 416161000000 → $416,161,000,000). Never display raw decimals or unformatted integers in the output.
 
 Output format — respond with valid JSON matching this schema exactly:
 {
@@ -115,6 +116,10 @@ def build_prompt(
 
 === METRICS (use only these numbers) ===
 {metrics_block}
+
+Note: When citing these metrics in your output, format ratio values as percentages \
+(e.g. 0.32 → 32.0%) and large integers with comma separators \
+(e.g. 416161000000 → $416,161,000,000).
 
 === SIGNALS (use only these frameworks and sources) ===
 {signals_block}
