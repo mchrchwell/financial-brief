@@ -283,5 +283,120 @@
       "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
       "insight": "Higgins's framework treats cost control as inseparable from revenue growth management — a firm whose cost base grows faster than its revenue is consuming the financial headroom that sustainable growth requires."
     }
+  ],
+
+  "Strong Efficiency Ratio": [
+    {
+      "framework": "Cost Efficiency and Profitability Ratios",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "A low efficiency ratio reflects disciplined control of operating expenses relative to revenue — Brealey et al. identify cost efficiency as a primary determinant of sustainable profitability in financial firms, where revenue streams are relatively fixed and cost control is the primary management lever."
+    }
+  ],
+
+  "Efficiency Ratio Risk": [
+    {
+      "framework": "Cost Efficiency and Profitability Ratios",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "An elevated efficiency ratio signals that operating costs are consuming an unsustainable share of revenue — Brealey et al. frame this as a direct threat to net profitability in financial firms, where the inability to control costs rapidly erodes earnings even when revenue is stable."
+    }
+  ],
+
+  "Strong ROE": [
+    {
+      "framework": "Return on Equity as a Value Driver",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran identifies ROE as a central measure of management's ability to generate returns for shareholders; ROE sustained above the cost of equity capital is the defining characteristic of value-creating firms and a primary input to dividend discount and excess return models."
+    },
+    {
+      "framework": "ROIC, ROE, and Value Creation",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "McKinsey's value creation framework treats return on equity as a close proxy for ROIC in financial firms where leverage is structural; strong ROE sustained above the cost of capital is evidence that the business model generates genuine economic profit rather than merely accounting returns."
+    }
+  ],
+
+  "Weak ROE": [
+    {
+      "framework": "Return on Equity as a Value Driver",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran's framework treats ROE below the cost of equity as evidence of value destruction — the firm is earning less on shareholders' capital than they could earn elsewhere at equivalent risk, implying the equity base is being eroded in economic terms even if accounting profits are positive."
+    },
+    {
+      "framework": "ROIC, ROE, and Value Creation",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "McKinsey's framework makes clear that weak ROE in financial firms signals an inability to generate returns above the cost of capital — the firm may be growing its asset base while destroying shareholder value, a pattern that persists until the underlying return gap is closed through cost reduction, asset optimization, or revenue growth."
+    }
+  ],
+
+  "Strong Net Interest Margin": [
+    {
+      "framework": "Interest Income and Spread Management",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Brealey et al. identify the spread between interest earned on assets and interest paid on liabilities as the core revenue mechanism of financial intermediaries; a wide net interest margin reflects favorable asset-liability positioning, strong pricing power on loans, or access to low-cost funding."
+    },
+    {
+      "framework": "Net Interest Margin as a Core Bank Performance Metric",
+      "source": "Rose, Peter S., and Hudgins, Sylvia C. Bank Management & Financial Services. 9th ed. McGraw-Hill Education, 2012.",
+      "insight": "Rose and Hudgins identify net interest margin as the single most important profitability indicator for depository institutions; a strong NIM reflects effective asset-liability management and the ability to price credit risk appropriately, and is the primary driver of a bank's ability to cover operating costs and generate retained earnings."
+    }
+  ],
+
+  "Net Interest Margin Risk": [
+    {
+      "framework": "Interest Income and Spread Management",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Brealey et al. frame spread compression — where funding costs rise faster than asset yields — as the primary revenue risk for financial intermediaries; a narrow net interest margin leaves insufficient headroom to absorb credit losses or operating cost increases without eroding net income."
+    },
+    {
+      "framework": "Net Interest Margin as a Core Bank Performance Metric",
+      "source": "Rose, Peter S., and Hudgins, Sylvia C. Bank Management & Financial Services. 9th ed. McGraw-Hill Education, 2012.",
+      "insight": "Rose and Hudgins identify NIM compression as an early warning signal in bank performance analysis; a declining or low NIM forces banks to either increase risk-taking on the asset side or reduce expenses, both of which carry their own risks and warrant close executive attention."
+    }
+  ],
+
+  "High Leverage Ratio": [
+    {
+      "framework": "Leverage, Financial Distress, and Systemic Risk",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran's distress cost framework holds that extreme leverage amplifies both the probability and severity of financial distress — in financial firms, where liabilities are predominantly depositor or counterparty obligations, high leverage ratios reduce the institution's ability to absorb asset-quality shocks without triggering a confidence crisis."
+    },
+    {
+      "framework": "Bank Leverage and Capital Adequacy",
+      "source": "Rose, Peter S., and Hudgins, Sylvia C. Bank Management & Financial Services. 9th ed. McGraw-Hill Education, 2012.",
+      "insight": "Rose and Hudgins treat the equity multiplier — total assets divided by equity — as a central measure of bank risk exposure; a high leverage ratio signals thin equity cushions relative to the asset base, increasing vulnerability to credit losses and reducing the institution's capacity to meet regulatory capital requirements under stress."
+    }
+  ],
+
+  "Moderate Leverage Ratio": [
+    {
+      "framework": "Leverage, Financial Distress, and Systemic Risk",
+      "source": "Damodaran, Aswath. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Wiley Finance, 2012.",
+      "insight": "Damodaran's framework acknowledges that leverage in financial firms is structural rather than discretionary — moderate leverage ratios in the 7–10x range reflect the normal operating model of broker-dealers and diversified financial institutions, and must be evaluated against asset quality and funding stability rather than against non-financial benchmarks."
+    },
+    {
+      "framework": "Bank Leverage and Capital Adequacy",
+      "source": "Rose, Peter S., and Hudgins, Sylvia C. Bank Management & Financial Services. 9th ed. McGraw-Hill Education, 2012.",
+      "insight": "Rose and Hudgins note that leverage in the 7–10x range is within the operating norm for many financial intermediaries, but emphasize that the adequacy of this leverage depends critically on the quality of the underlying asset portfolio and the stability of funding sources — both of which require monitoring alongside the headline ratio."
+    }
+  ],
+
+  "Strong Revenue Growth": [
+    {
+      "framework": "Growth, ROIC, and Value Creation",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "McKinsey's value creation framework establishes that revenue growth creates shareholder value only when the incremental business earns returns above the cost of capital; strong top-line growth combined with disciplined capital allocation is the most reliable path to sustained enterprise value compounding."
+    },
+    {
+      "framework": "Sustainable Growth Rate Framework",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Higgins's sustainable growth model shows that revenue growth above the internally financeable rate requires external capital or explicit trade-offs across profitability, leverage, or asset efficiency — strong growth must therefore be evaluated against the firm's financing capacity, not just its headline rate."
+    }
+  ],
+
+  "Net Margin": [
+    {
+      "framework": "Net Profit Margin as a Profitability Indicator",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Brealey et al. identify net profit margin as the bottom-line summary of a firm's profitability after all costs — financing, taxes, and operating — have been deducted from revenue; it reflects not just operational efficiency but also the firm's capital structure choices and effective tax management."
+    }
   ]
 }

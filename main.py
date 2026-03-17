@@ -21,12 +21,14 @@ except ImportError:
 
 import pandas as pd
 
-from financial_brief.ingest   import fetch_company_data, get_company_name
-from financial_brief.metrics  import compute_all_metrics
-from financial_brief.signals  import detect_signals
-from financial_brief.matcher  import load_library, match_citations
-from financial_brief.analyst  import generate_analysis
-from financial_brief.reporter import generate_report, save_report
+from financial_brief.ingest            import fetch_company_data, fetch_company_data_financial, get_company_name, get_sector
+from financial_brief.metrics           import compute_all_metrics
+from financial_brief.metrics_financial import compute_all_metrics_financial
+from financial_brief.signals           import detect_signals
+from financial_brief.signals_financial import detect_signals_financial
+from financial_brief.matcher           import load_library, match_citations
+from financial_brief.analyst           import generate_analysis
+from financial_brief.reporter          import generate_report, save_report
 
 REQUIRED_COLUMNS = {"year", "revenue", "cogs", "opex", "cash", "debt"}
 LIBRARY_PATH = os.path.join(os.path.dirname(__file__), "financial_brief", "library.json")
@@ -44,8 +46,17 @@ def main() -> None:
     if is_ticker:
         ticker = first_arg
         try:
-            df           = fetch_company_data(ticker)
             company_name = get_company_name(ticker)
+            sector       = get_sector(ticker)
+            print(f"Sector detected: {sector}")
+            if sector == "financial_services":
+                df      = fetch_company_data_financial(ticker)
+                metrics = compute_all_metrics_financial(df)
+                signals = detect_signals_financial(metrics)
+            else:
+                df      = fetch_company_data(ticker)
+                metrics = compute_all_metrics(df)
+                signals = detect_signals(metrics)
         except ValueError as exc:
             print(f"Error: {exc}")
             sys.exit(1)
@@ -69,11 +80,12 @@ def main() -> None:
 
     year = int(df["year"].max())
 
-    # Stage 1 — Metrics
-    metrics = compute_all_metrics(df)
+    if not is_ticker:
+        # Stage 1 — Metrics
+        metrics = compute_all_metrics(df)
 
-    # Stage 2 — Signals
-    signals = detect_signals(metrics)
+        # Stage 2 — Signals
+        signals = detect_signals(metrics)
 
     # Stage 3 — Citations
     library = load_library(LIBRARY_PATH)

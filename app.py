@@ -18,12 +18,14 @@ except ImportError:
 import pandas as pd
 from flask import Flask, render_template_string, request
 
-from financial_brief.analyst  import generate_analysis
-from financial_brief.ingest   import fetch_company_data, get_company_name
-from financial_brief.matcher  import load_library, match_citations
-from financial_brief.metrics  import compute_all_metrics
-from financial_brief.reporter import generate_report
-from financial_brief.signals  import detect_signals
+from financial_brief.analyst           import generate_analysis
+from financial_brief.ingest            import fetch_company_data, fetch_company_data_financial, get_company_name, get_sector
+from financial_brief.matcher           import load_library, match_citations
+from financial_brief.metrics           import compute_all_metrics
+from financial_brief.metrics_financial import compute_all_metrics_financial
+from financial_brief.reporter          import generate_report
+from financial_brief.signals           import detect_signals
+from financial_brief.signals_financial import detect_signals_financial
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024  # 5 MB upload limit
@@ -261,8 +263,16 @@ def index():
 
         try:
             if ticker:
-                df           = fetch_company_data(ticker)
                 company_name = get_company_name(ticker)
+                sector       = get_sector(ticker)
+                if sector == "financial_services":
+                    df      = fetch_company_data_financial(ticker)
+                    metrics = compute_all_metrics_financial(df)
+                    signals = detect_signals_financial(metrics)
+                else:
+                    df      = fetch_company_data(ticker)
+                    metrics = compute_all_metrics(df)
+                    signals = detect_signals(metrics)
             elif file and file.filename != "":
                 if not company_name:
                     raise ValueError("Company name is required when uploading a CSV.")
@@ -275,9 +285,10 @@ def index():
             else:
                 raise ValueError("Please enter a ticker symbol or upload a CSV file.")
 
-            year             = int(df["year"].max())
-            metrics          = compute_all_metrics(df)
-            signals          = detect_signals(metrics)
+            year = int(df["year"].max())
+            if not ticker:
+                metrics = compute_all_metrics(df)
+                signals = detect_signals(metrics)
             library          = load_library(LIBRARY_PATH)
             enriched_signals = match_citations(signals, library)
             analysis         = generate_analysis(enriched_signals, metrics, company_name)
