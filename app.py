@@ -293,7 +293,7 @@ def index():
             library          = load_library(LIBRARY_PATH)
             enriched_signals = match_citations(signals, library)
             analysis         = generate_analysis(enriched_signals, metrics, company_name)
-            report           = generate_report(analysis, company_name, year)
+            report           = generate_report(analysis, company_name, year, sector if ticker else "general")
 
         except Exception as exc:
             error = str(exc)

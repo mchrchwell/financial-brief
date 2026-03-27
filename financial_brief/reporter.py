@@ -9,11 +9,13 @@ save_report(report_text, path)
 """
 
 
-def generate_report(analysis: dict, company_name: str, year: int | str) -> str:
+def generate_report(analysis: dict, company_name: str, year: int | str, sector: str | None = None) -> str:
+    sector_label = (sector or "general").replace("_", " ").title()
     lines = []
 
     # Header
     lines.append(f"{company_name} -- Financial Brief {year}")
+    lines.append(f"Sector: {sector_label}")
     lines.append("=" * 60)
     lines.append("")
 

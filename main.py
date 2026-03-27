@@ -100,7 +100,7 @@ def main() -> None:
         sys.exit(1)
 
     # Stage 5 — Report
-    report = generate_report(analysis, company_name, year)
+    report = generate_report(analysis, company_name, year, sector if is_ticker else "general")
 
     print(report)
 
