@@ -135,15 +135,30 @@ def fetch_company_data_financial(ticker_symbol: str) -> pd.DataFrame:
 
 FINANCIAL_SECTORS = {"Financial Services", "Finance", "Banking", "Insurance"}
 
+SECTOR_MAP = {
+    "Technology":             "technology",
+    "Healthcare":             "healthcare",
+    "Consumer Cyclical":      "consumer_cyclical",
+    "Consumer Defensive":     "consumer_defensive",
+    "Industrials":            "industrials",
+    "Energy":                 "energy",
+    "Communication Services": "communication_services",
+    "Financial Services":     "financial_services",
+    "Finance":                "financial_services",
+    "Banking":                "financial_services",
+    "Insurance":              "financial_services",
+}
+
 
 def get_sector(ticker_symbol: str) -> str:
-    """Return an internal sector code: 'financial_services' or 'general'."""
-    info = yf.Ticker(ticker_symbol).info
-    if not info:
-        print(f"Warning: no info returned for '{ticker_symbol}', defaulting sector to 'general'.")
-        return "general"
-    sector = info.get("sector")
+    """Return an internal sector code based on yfinance sector string."""
+    info   = yf.Ticker(ticker_symbol).info
+    sector = info.get("sector") if info else None
     if not sector:
-        print(f"Warning: no sector found for '{ticker_symbol}', defaulting to 'general'.")
+        print(f"[get_sector] Warning: no sector found for {ticker_symbol}, defaulting to 'general'.")
         return "general"
-    return "financial_services" if sector in FINANCIAL_SECTORS else "general"
+    code = SECTOR_MAP.get(sector)
+    if code is None:
+        print(f"[get_sector] Warning: unmapped sector '{sector}' for {ticker_symbol}, defaulting to 'general'.")
+        return "general"
+    return code

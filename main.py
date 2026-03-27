@@ -26,6 +26,7 @@ from financial_brief.metrics           import compute_all_metrics
 from financial_brief.metrics_financial import compute_all_metrics_financial
 from financial_brief.signals           import detect_signals
 from financial_brief.signals_financial import detect_signals_financial
+from financial_brief.signals_sector    import detect_signals_sector
 from financial_brief.matcher           import load_library, match_citations
 from financial_brief.analyst           import generate_analysis
 from financial_brief.reporter          import generate_report, save_report
@@ -56,7 +57,7 @@ def main() -> None:
             else:
                 df      = fetch_company_data(ticker)
                 metrics = compute_all_metrics(df)
-                signals = detect_signals(metrics)
+                signals = detect_signals_sector(metrics, sector)
         except ValueError as exc:
             print(f"Error: {exc}")
             sys.exit(1)
@@ -85,7 +86,7 @@ def main() -> None:
         metrics = compute_all_metrics(df)
 
         # Stage 2 — Signals
-        signals = detect_signals(metrics)
+        signals = detect_signals_sector(metrics, "general")
 
     # Stage 3 — Citations
     library = load_library(LIBRARY_PATH)

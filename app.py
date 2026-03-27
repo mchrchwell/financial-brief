@@ -26,6 +26,7 @@ from financial_brief.metrics_financial import compute_all_metrics_financial
 from financial_brief.reporter          import generate_report
 from financial_brief.signals           import detect_signals
 from financial_brief.signals_financial import detect_signals_financial
+from financial_brief.signals_sector    import detect_signals_sector
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024  # 5 MB upload limit
@@ -272,7 +273,7 @@ def index():
                 else:
                     df      = fetch_company_data(ticker)
                     metrics = compute_all_metrics(df)
-                    signals = detect_signals(metrics)
+                    signals = detect_signals_sector(metrics, sector)
             elif file and file.filename != "":
                 if not company_name:
                     raise ValueError("Company name is required when uploading a CSV.")
@@ -288,7 +289,7 @@ def index():
             year = int(df["year"].max())
             if not ticker:
                 metrics = compute_all_metrics(df)
-                signals = detect_signals(metrics)
+                signals = detect_signals_sector(metrics, "general")
             library          = load_library(LIBRARY_PATH)
             enriched_signals = match_citations(signals, library)
             analysis         = generate_analysis(enriched_signals, metrics, company_name)

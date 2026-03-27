@@ -398,5 +398,52 @@
       "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
       "insight": "Brealey et al. identify net profit margin as the bottom-line summary of a firm's profitability after all costs — financing, taxes, and operating — have been deducted from revenue; it reflects not just operational efficiency but also the firm's capital structure choices and effective tax management."
     }
+  ],
+
+  "Disciplined Opex Ratio": [
+    {
+      "framework": "Operational Effectiveness and Cost Discipline",
+      "source": "Porter, Michael E. 'What Is Strategy?' Harvard Business Review, November–December 1996.",
+      "insight": "A low opex ratio reflects disciplined control of selling, general, and administrative costs relative to revenue — Porter identifies operational effectiveness as a prerequisite for competitive viability, though he cautions that efficiency alone is not a substitute for strategic positioning."
+    },
+    {
+      "framework": "NOPLAT Margin and ROIC Decomposition",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "McKinsey's ROIC decomposition treats overhead cost control as a direct lever on NOPLAT margin; companies that hold opex growth below revenue growth generate expanding operating margins and improve ROIC without requiring additional capital investment."
+    }
+  ],
+
+  "High Opex Ratio": [
+    {
+      "framework": "Cost Advantage and Overhead Burden",
+      "source": "Porter, Michael E. Competitive Advantage: Creating and Sustaining Superior Performance. Free Press, 1985. Chapter 3: Cost Advantage.",
+      "insight": "Porter identifies overhead cost as a primary cost driver that can erode competitive position; a high opex ratio signals that selling, general, and administrative expenses are consuming revenue at a rate that undermines the firm's ability to compete on price or reinvest in growth."
+    },
+    {
+      "framework": "Operating Leverage and Margin Pressure",
+      "source": "Higgins, Robert C. Analysis for Financial Management. 13th ed. McGraw-Hill Education, 2023.",
+      "insight": "Higgins frames cost control as inseparable from profitability management — a persistently high opex ratio constrains operating margin improvement regardless of revenue growth, and indicates that cost structure realignment is a prerequisite for earnings expansion."
+    }
+  ],
+
+  "Moderate Opex Ratio": [
+    {
+      "framework": "Financial Ratio Analysis and Benchmarking",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "Brealey et al. note that individual ratios are most informative when benchmarked against sector peers and prior-year trends — a moderate opex ratio requires both comparisons to determine whether cost discipline is improving, stable, or eroding relative to the relevant competitive context."
+    }
+  ],
+
+  "Weak Operating Margin": [
+    {
+      "framework": "Financial Distress and Margin Deterioration",
+      "source": "Brealey, Richard A., Myers, Stewart C., and Allen, Franklin. Principles of Corporate Finance. 14th ed. McGraw-Hill Education, 2023.",
+      "insight": "A weak but positive operating margin provides minimal buffer against revenue volatility — Brealey et al. frame thin operating profitability as a precursor to financial distress when combined with fixed debt obligations, as any revenue shortfall can rapidly convert operating profit to operating loss."
+    },
+    {
+      "framework": "Margin Improvement as a Value Driver",
+      "source": "Koller, Tim, Goedhart, Marc, and Wessels, David. Valuation: Measuring and Managing the Value of Companies. 7th ed. McKinsey & Company / Wiley Finance, 2020.",
+      "insight": "McKinsey's value driver framework identifies margin improvement from a low base as one of the highest-return initiatives available to management — a weak operating margin represents both a risk and an opportunity, depending on whether the causes are structural or correctable."
+    }
   ]
 }
