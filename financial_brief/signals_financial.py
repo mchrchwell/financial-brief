@@ -24,9 +24,9 @@ def _check_efficiency_ratio(metrics: dict) -> dict | None:
     if v < 0.60:
         return _signal("Strong Efficiency Ratio", "strength", "efficiency_ratio", v,
                        "Efficiency ratio below 60% indicates disciplined cost management relative to revenue")
-    if v > 0.70:
+    if v > 0.65:
         return _signal("Efficiency Ratio Risk", "risk", "efficiency_ratio", v,
-                       "Efficiency ratio above 70% indicates cost structure pressure")
+                       "Efficiency ratio above 65% indicates cost structure pressure relative to sector peers.")
     return None
 
 
