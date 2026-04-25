@@ -49,21 +49,21 @@ HTML = """<!DOCTYPE html>
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      background: #f4f5f7;
+      background: #f0ebe0;
       color: #1a1a2e;
       min-height: 100vh;
       padding: 48px 16px;
     }
 
-    .container { max-width: 720px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; }
 
     header { margin-bottom: 36px; }
     header h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.3px; }
     header p  { margin-top: 6px; color: #555; font-size: 0.95rem; line-height: 1.5; }
 
     .card {
-      background: #fff;
-      border: 1px solid #e0e0e0;
+      background: #ffffff;
+      border: 1px solid #e2ddd4;
       border-radius: 8px;
       padding: 32px;
       margin-bottom: 28px;
@@ -75,11 +75,11 @@ HTML = """<!DOCTYPE html>
     input[type="text"], input[type="file"] {
       width: 100%;
       padding: 10px 12px;
-      border: 1px solid #ccc;
+      border: 1px solid #d4cfc6;
       border-radius: 6px;
       font-size: 0.95rem;
       margin-bottom: 20px;
-      background: #fafafa;
+      background: #faf8f4;
     }
     input[type="text"]:focus, input[type="file"]:focus {
       outline: none;
@@ -108,7 +108,7 @@ HTML = """<!DOCTYPE html>
       content: "";
       flex: 1;
       height: 1px;
-      background: #e0e0e0;
+      background: #e2ddd4;
     }
 
     button[type="submit"] {
@@ -156,23 +156,73 @@ HTML = """<!DOCTYPE html>
     }
     .error strong { display: block; margin-bottom: 4px; }
 
-    .report-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; }
-    .report-header {
-      padding: 20px 28px;
-      border-bottom: 1px solid #e0e0e0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .rpt-header-card {
+      background: #1a1a2e; border: none; border-radius: 8px;
+      padding: 28px 32px; margin-bottom: 16px;
     }
-    .report-header h2 { font-size: 1rem; font-weight: 600; }
-    .report-body {
-      padding: 28px;
+    .rpt-company {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px;
+      color: #ffffff;
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .rpt-sector-badge {
       font-family: "SF Mono", "Fira Code", "Courier New", monospace;
-      font-size: 0.82rem;
-      line-height: 1.7;
-      white-space: pre-wrap;
-      color: #1a1a2e;
-      overflow-x: auto;
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: transparent; color: #c9a84c;
+      border: 1px solid #c9a84c; border-radius: 3px; padding: 3px 8px;
+    }
+    .rpt-year { font-size: 0.82rem; color: #888; }
+    .rpt-summary-card {
+      background: #ffffff; border: 1px solid #e2ddd4; border-left: 4px solid #1a1a2e;
+      border-radius: 8px; padding: 28px 32px; margin-bottom: 16px;
+    }
+    .rpt-summary-card h3, .rpt-section-card h3 {
+      font-family: "SF Mono", "Fira Code", "Courier New", monospace;
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; margin-bottom: 14px;
+    }
+    .rpt-summary-card h3 { color: #888; }
+    .rpt-summary-card p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.0rem; line-height: 1.75; letter-spacing: 0.01em; color: #1a1a2e;
+    }
+    .rpt-section-card {
+      background: #ffffff; border: 1px solid #e2ddd4; border-radius: 8px;
+      padding: 28px 32px; margin-bottom: 16px;
+    }
+    .rpt-section-card.strengths    { border-left: 4px solid #1D9E75; }
+    .rpt-section-card.strengths h3 { color: #1D9E75; }
+    .rpt-section-card.risks        { border-left: 4px solid #E24B4A; }
+    .rpt-section-card.risks h3     { color: #E24B4A; }
+    .rpt-section-card.observations    { border-left: 4px solid #BA7517; }
+    .rpt-section-card.observations h3 { color: #BA7517; }
+    .rpt-finding {
+      padding: 14px 0; border-bottom: 1px solid #ede8e0;
+    }
+    .rpt-finding:first-child { padding-top: 0; }
+    .rpt-finding:last-child  { border-bottom: none; padding-bottom: 0; }
+    .rpt-finding p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400; font-size: 1.0rem; line-height: 1.75;
+      letter-spacing: 0.01em; color: #1a1a2e; margin-bottom: 0;
+    }
+    .rpt-citation {
+      display: block; margin-top: 7px; padding-top: 7px;
+      border-top: 1px solid #ede8e0;
+      font-family: "SF Mono", "Fira Code", "Courier New", monospace;
+      font-size: 0.73rem; letter-spacing: 0.03em; color: #999;
+    }
+    .rpt-empty {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.9rem; color: #aaa; font-style: italic;
+    }
+    .rpt-footer {
+      font-family: "SF Mono", "Fira Code", "Courier New", monospace;
+      font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase;
+      color: #aaa; text-align: center; padding: 4px 0 28px;
     }
   </style>
 </head>
@@ -250,13 +300,63 @@ HTML = """<!DOCTYPE html>
       <p style="font-size: 0.8rem; color: #999; margin-top: 4px;">CSV upload available for private companies or custom datasets.</p>
     </div>
 
-    {% if report %}
-    <div class="report-card">
-      <div class="report-header">
-        <h2>Executive Brief</h2>
+    {% if analysis %}
+    <div class="rpt-header-card">
+      <div class="rpt-company">
+        {{ company_name | e }}
+        <span class="rpt-sector-badge">{{ (sector or "General") | replace("_", " ") | title }}</span>
       </div>
-      <div class="report-body">{{ report }}</div>
+      <div class="rpt-year">Fiscal Year {{ year }}</div>
     </div>
+
+    <div class="rpt-summary-card">
+      <h3>Executive Summary</h3>
+      <p>{{ analysis.executive_summary | e }}</p>
+    </div>
+
+    <div class="rpt-section-card strengths">
+      <h3>Strengths</h3>
+      {% if analysis.strengths %}
+        {% for item in analysis.strengths %}
+        <div class="rpt-finding">
+          <p>{{ item.finding | e }}</p>
+          <span class="rpt-citation">{{ item.framework | e }} &nbsp;&middot;&nbsp; {{ item.source | e }}</span>
+        </div>
+        {% endfor %}
+      {% else %}
+        <p class="rpt-empty">None identified.</p>
+      {% endif %}
+    </div>
+
+    <div class="rpt-section-card risks">
+      <h3>Risks</h3>
+      {% if analysis.risks %}
+        {% for item in analysis.risks %}
+        <div class="rpt-finding">
+          <p>{{ item.finding | e }}</p>
+          <span class="rpt-citation">{{ item.framework | e }} &nbsp;&middot;&nbsp; {{ item.source | e }}</span>
+        </div>
+        {% endfor %}
+      {% else %}
+        <p class="rpt-empty">No material risks identified at current sector thresholds.</p>
+      {% endif %}
+    </div>
+
+    <div class="rpt-section-card observations">
+      <h3>Observations</h3>
+      {% if analysis.observations %}
+        {% for item in analysis.observations %}
+        <div class="rpt-finding">
+          <p>{{ item.finding | e }}</p>
+          <span class="rpt-citation">{{ item.framework | e }} &nbsp;&middot;&nbsp; {{ item.source | e }}</span>
+        </div>
+        {% endfor %}
+      {% else %}
+        <p class="rpt-empty">None identified.</p>
+      {% endif %}
+    </div>
+
+    <div class="rpt-footer">Analysis generated by Claude (Anthropic) &nbsp;&middot;&nbsp; Benchmarks: Damodaran NYU Stern, January 2026</div>
     {% endif %}
 
   </div>
@@ -280,9 +380,12 @@ HTML = """<!DOCTYPE html>
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    report = None
-    error = None
+    report       = None
+    analysis     = None
+    error        = None
     company_name = ""
+    sector       = "general"
+    year         = None
 
     if request.method == "POST":
         ticker       = request.form.get("ticker", "").strip().upper()
@@ -319,14 +422,15 @@ def index():
                 signals = detect_signals_sector(metrics, "general")
             library          = load_library(LIBRARY_PATH)
             enriched_signals = match_citations(signals, library)
-            analysis         = generate_analysis(enriched_signals, metrics, company_name)
-            report           = generate_report(analysis, company_name, year, sector if ticker else "general")
+            analysis = generate_analysis(enriched_signals, metrics, company_name)
+            report   = generate_report(analysis, company_name, year, sector if ticker else "general")
 
         except Exception as exc:
             error = str(exc)
 
     return render_template_string(
-        HTML, report=report, error=error, company_name=company_name,
+        HTML, report=report, analysis=analysis, error=error,
+        company_name=company_name, sector=sector, year=year,
         ticker=request.form.get("ticker", "").strip().upper() if request.method == "POST" else ""
     )
 
