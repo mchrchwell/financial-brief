@@ -40,7 +40,10 @@ def generate_report(analysis: dict, company_name: str, year: int | str, sector: 
             lines.append(f"  Framework: {item['framework']}  |  Source: {item['source']}")
             lines.append("")
         if not items:
-            lines.append("None identified.")
+            if title == "RISKS":
+                lines.append("No material risks identified at current sector thresholds.")
+            else:
+                lines.append("None identified.")
             lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
