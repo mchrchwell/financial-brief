@@ -256,7 +256,11 @@ HTML = """<!DOCTYPE html>
         <label for="csv_file">Upload CSV</label>
         <input type="file" id="csv_file" name="csv_file" accept=".csv" />
         <p class="columns-note">
-          Required columns: year, revenue, cogs, opex, cash, debt
+          CSV upload is available for private companies. Your file must include six columns:
+          year, revenue, cogs, opex, cash, debt. One row per year, numbers only, no dollar
+          signs or commas. At least two years of data recommended for full analysis.
+          Revenue, COGS, and OPEX come from your income statement. Cash and debt come from
+          your balance sheet.
         </p>
 
         <label for="company_name">Company Name <span style="font-weight:400;color:#999;">(required with CSV)</span></label>
